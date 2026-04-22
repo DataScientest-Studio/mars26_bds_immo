@@ -6,10 +6,10 @@ from pathlib import Path
 
 DATA_URL1 = "https://static.data.gouv.fr/resources/demandes-de-valeurs-foncieres/20260405-002306/valeursfoncieres-2024.txt.zip"
 DATA_URL2 = "https://static.data.gouv.fr/resources/demandes-de-valeurs-foncieres/20260405-002321/valeursfoncieres-2025.txt.zip"
-DATA_DIR = "data"
+DATA_DIR = "data/raw/"
 ZIP_PATH1 = os.path.join(DATA_DIR, "download1.zip")
 ZIP_PATH2 = os.path.join(DATA_DIR, "download2.zip")
-DATA_DIRObjet = Path("data")
+DATA_DIRObjet = Path("data/raw/")
 
 def download_and_extract():
     """Télécharge et extrait les données"""
