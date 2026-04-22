@@ -164,4 +164,14 @@ cython_debug/
 
 # Data folder
 data/
-.DS_Store
+*.zip
+*.tar.gz
+
+# Python
+__pycache__/
+*.pyc
+.env
+
+# IDE
+.vscode/
+.idea/
