@@ -10,6 +10,7 @@ DATA_DIR = "data/raw/"
 ZIP_PATH1 = os.path.join(DATA_DIR, "download1.zip")
 ZIP_PATH2 = os.path.join(DATA_DIR, "download2.zip")
 DATA_DIRObjet = Path("data/raw/")
+all_data = []
 
 def download_and_extract():
     """Télécharge et extrait les données"""
@@ -31,8 +32,14 @@ def download_and_extract():
     for txt_file in DATA_DIRObjet.rglob("*.txt"):
         data = pd.read_csv(txt_file, sep="|")
         csv_file = txt_file.with_suffix(".csv")
-        data.to_csv(csv_file, index=False)
+        all_data.append(data)
+        #data.to_csv(csv_file, index=False)
         txt_file.unlink()
+    merged_data = pd.concat(all_data, ignore_index=True)
+
+
+    # Sauvegarder
+    merged_data.to_csv(DATA_DIR+"valeurs_foncieres_2024_2025.csv", index=False)
     
     print("✓ Données téléchargées et extraites!")
     os.remove(ZIP_PATH1)  # Supprime le zip après extraction
