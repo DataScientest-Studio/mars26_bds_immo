@@ -164,10 +164,6 @@ cython_debug/
 
 # Data folder
 data/
-.DS_Store
-
-# Données volumineuses
-data/
 *.zip
 *.tar.gz
 
