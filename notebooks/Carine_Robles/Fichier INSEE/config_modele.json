@@ -1,0 +1,28 @@
+{
+    "model_name": "Estimateur Immobilier France",
+    "version": "1.0",
+    "date_entrainement": "11/05/2026 10:38",
+    "features_order": [
+        "surface_reelle_bati",
+        "nombre_pieces_principales",
+        "surface_terrain",
+        "latitude",
+        "longitude",
+        "is_maison",
+        "is_neuf",
+        "revenu_median",
+        "population_commune",
+        "dist_primaire",
+        "dist_college",
+        "dist_lycee",
+        "dist_supermarche",
+        "dist_hopital",
+        "dist_com_prox",
+        "dist_sante_prox"
+    ],
+    "target": "valeur_fonciere",
+    "filtre_prix_min": 50000,
+    "filtre_prix_max": 1500000,
+    "r2_score": 0.7414,
+    "mape_score": 35.46
+}
