@@ -1,0 +1,17 @@
+[theme]
+primaryColor = "#4CAF50" 
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F1F8E9"
+textColor = "#2C3E50"
+font = "sans serif"
+
+[client]
+# Masque la boîte de dialogue "Running..."
+showErrorDetails = false
+
+[browser]
+# Empêche Streamlit d'ouvrir un nouvel onglet à chaque fois que tu lances le code
+gatherUsageStats = false
+
+[server]
+# Augmente la taille max des fichiers 
